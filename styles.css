@@ -441,6 +441,18 @@ main {
 /* Полноэкранный просмотр фото */
 .lightbox-trigger {
   cursor: zoom-in;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Убираем системную синюю обводку Chrome/Edge; свой контур — только с клавиатуры */
+.lightbox-trigger:focus {
+  outline: none;
+}
+
+.lightbox-trigger:focus-visible {
+  outline: 2px solid var(--gold-dark);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 .lightbox {
@@ -469,6 +481,10 @@ main {
   cursor: default;
   border-radius: 4px;
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .lightbox-close {
@@ -486,6 +502,15 @@ main {
   line-height: 1;
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s;
+}
+
+.lightbox-close:focus {
+  outline: none;
+}
+
+.lightbox-close:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
 }
 
 .lightbox-close:hover {
