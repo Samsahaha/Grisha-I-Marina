@@ -286,6 +286,17 @@ main {
   display: block;
 }
 
+.thumb-caption {
+  margin: 0.45rem 0.15rem 0;
+  font-family: var(--font-serif);
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
 .hero-lead {
   max-width: 640px;
   margin: 0 auto 2.25rem;
