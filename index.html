@@ -43,7 +43,7 @@
               alt="Гриша и Марина — главное фото"
               width="1200"
               height="800"
-              class="gallery-main-img"
+              class="gallery-main-img lightbox-trigger"
               loading="eager"
             />
           </figure>
@@ -51,22 +51,22 @@
           <div class="gallery-side">
             <div class="thumb-card">
               <div class="thumb-img-wrap">
-                <img src="photo_2026-05-04_17-17-35%20(2).jpg" alt="" loading="lazy" />
+                <img class="lightbox-trigger" src="photo_2026-05-04_17-17-35%20(2).jpg" alt="" loading="lazy" />
               </div>
             </div>
             <div class="thumb-card">
               <div class="thumb-img-wrap">
-                <img src="photo_2026-05-04_17-21-40.jpg" alt="" loading="lazy" />
+                <img class="lightbox-trigger" src="photo_2026-05-04_17-21-40.jpg" alt="" loading="lazy" />
               </div>
             </div>
             <div class="thumb-card">
               <div class="thumb-img-wrap">
-                <img src="photo_2026-05-04_17-21-38.jpg" alt="" loading="lazy" />
+                <img class="lightbox-trigger" src="photo_2026-05-04_17-21-38.jpg" alt="" loading="lazy" />
               </div>
             </div>
             <div class="thumb-card">
               <div class="thumb-img-wrap">
-                <img src="photo_2026-05-04_17-21-39.jpg" alt="" loading="lazy" />
+                <img class="lightbox-trigger" src="photo_2026-05-04_17-21-39.jpg" alt="" loading="lazy" />
               </div>
             </div>
           </div>
@@ -121,5 +121,19 @@
       </footer>
     </main>
   </div>
+
+  <div
+    id="lightbox"
+    class="lightbox"
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-label="Просмотр фотографии"
+  >
+    <button type="button" class="lightbox-close" aria-label="Закрыть">×</button>
+    <img class="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="lightbox.js" defer></script>
 </body>
 </html>
